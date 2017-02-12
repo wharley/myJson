@@ -22,15 +22,18 @@ export class HomePage {
     password: ''
   }
 
+  items:any;
+
+
   constructor(public navCtrl: NavController, public service: HomeService) { }
 
   login() {
-    
     this.service.getFunctions(this.user)
                 .subscribe(
                     datas => {
                           if(datas)
-                              console.log(datas)
+                            this.items = datas.dados
+                              //console.log(datas.dados)
                               //this.view.dismiss(this.data)
                           else alert("usuario ou senha inválido")
     });
