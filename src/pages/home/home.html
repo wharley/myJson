@@ -23,11 +23,7 @@
     Login
   </button>
 
-  <ion-list>
-    <ion-item-sliding>
-      <ion-item>
-        {{items}}
-      </ion-item>
-    </ion-item-sliding>
+  <ion-list inset>
+    <ion-item *ngFor="let word of items">{{word || json}}</ion-item>
   </ion-list>
 </ion-content>

@@ -32,8 +32,7 @@ export class HomePage {
                 .subscribe(
                     datas => {
                           if(datas)
-                            this.items = datas.dados
-                              //console.log(datas.dados)
+                              console.log(datas.dados)
                               //this.view.dismiss(this.data)
                           else alert("usuario ou senha inválido")
     });
