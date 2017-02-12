@@ -14,7 +14,7 @@ export class HomeService {
   };
 
   getFunctions(user) {
-    let urlDest = "http://otaciobarbosa.com.br/private/mobile/wav/server/login.php?username=" + user.username + "&password=" + user.password;
+    let urlDest = "http://otaciobarbosa.com.br/app/login.php?username=" + user.username + "&password=" + user.password;
    //robson.santos
   //  robson123
     return this.http.get(urlDest)
